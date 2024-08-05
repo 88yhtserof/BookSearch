@@ -9,6 +9,8 @@ import UIKit
 
 class BookSearchListViewController: UIViewController {
     
+    var dataSource: DataSource!
+    
     private lazy var searchBar = UISearchBar()
     private lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout())
 
@@ -17,6 +19,7 @@ class BookSearchListViewController: UIViewController {
         
         configuraSubviews()
         configureView()
+        configureDataSource()
     }
 }
 
@@ -39,6 +42,16 @@ private extension BookSearchListViewController {
         collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -verticalInset).isActive = true
         collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: horizontalInset).isActive = true
         collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -horizontalInset).isActive = true
+    }
+    
+    func configureDataSource() {
+        let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
+        dataSource = DataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, itemIdentifier in
+            return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
+        })
+        
+        updateSnapshot()
+        collectionView.dataSource = dataSource
     }
 }
 
