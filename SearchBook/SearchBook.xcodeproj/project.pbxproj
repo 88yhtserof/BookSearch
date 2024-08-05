@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1452C8AD2C6055A200BE658D /* BookSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452C8AC2C6055A200BE658D /* BookSummary.swift */; };
 		1489CEA42C5F9C2100E923A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489CEA32C5F9C2100E923A0 /* AppDelegate.swift */; };
 		1489CEA62C5F9C2100E923A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489CEA52C5F9C2100E923A0 /* SceneDelegate.swift */; };
 		1489CEA82C5F9C2100E923A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489CEA72C5F9C2100E923A0 /* ViewController.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1452C8AC2C6055A200BE658D /* BookSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSummary.swift; sourceTree = "<group>"; };
 		1489CEA02C5F9C2100E923A0 /* SearchBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1489CEA32C5F9C2100E923A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1489CEA52C5F9C2100E923A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1452C8AB2C60559800BE658D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1452C8AC2C6055A200BE658D /* BookSummary.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1489CE972C5F9C2100E923A0 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		1489CEA22C5F9C2100E923A0 /* SearchBook */ = {
 			isa = PBXGroup;
 			children = (
+				1452C8AB2C60559800BE658D /* Model */,
 				1489CEA32C5F9C2100E923A0 /* AppDelegate.swift */,
 				1489CEA52C5F9C2100E923A0 /* SceneDelegate.swift */,
 				1489CEA72C5F9C2100E923A0 /* ViewController.swift */,
@@ -136,6 +147,7 @@
 			files = (
 				1489CEA82C5F9C2100E923A0 /* ViewController.swift in Sources */,
 				1489CEA42C5F9C2100E923A0 /* AppDelegate.swift in Sources */,
+				1452C8AD2C6055A200BE658D /* BookSummary.swift in Sources */,
 				1489CEA62C5F9C2100E923A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
