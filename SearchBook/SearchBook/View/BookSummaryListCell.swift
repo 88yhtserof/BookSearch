@@ -10,6 +10,7 @@ import UIKit
 class BookSummaryListCell: UICollectionViewCell {
     var bookSummary: BookSummary?
     
+    private lazy var stack = UIStackView()
     private lazy var imageVew = UIImageView()
     private lazy var titleLabel = UILabel()
     private lazy var authorLabel = UILabel()
@@ -24,10 +25,10 @@ class BookSummaryListCell: UICollectionViewCell {
 
 private extension BookSummaryListCell {
     func configureSubviews() {
+        stack.axis = .vertical
+        stack.spacing = CGFloat(10)
         imageVew.contentMode = .scaleToFill
-        
-        [ imageVew, titleLabel, authorLabel ]
-            .forEach{ $0.translatesAutoresizingMaskIntoConstraints = false }
+        imageVew.backgroundColor = .systemGray6
         
         guard let bookSummary = self.bookSummary else {
             fatalError("The bookSummary property has no value yet")
@@ -42,22 +43,15 @@ private extension BookSummaryListCell {
     
     func configureContentView() {
         [ imageVew, titleLabel, authorLabel ]
-            .forEach{ contentView.addSubview($0) }
-        
-        let interImageSpacing = CGFloat(5)
-        let interLabelSpacing = CGFloat(3)
+            .forEach{ stack.addArrangedSubview($0) }
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(stack)
         
         NSLayoutConstraint.activate([
-            imageVew.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            imageVew.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            imageVew.topAnchor.constraint(equalTo: contentView.topAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            titleLabel.topAnchor.constraint(equalTo: imageVew.bottomAnchor, constant: interImageSpacing),
-            authorLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            authorLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            authorLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: interLabelSpacing),
-            authorLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+            stack.topAnchor.constraint(equalTo: contentView.topAnchor),
+            stack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            stack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            stack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
     }
 }
