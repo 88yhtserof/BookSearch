@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ImageLoader {
+struct ImageLoader {
     
     /// Load a Image from URL and return a UIImage.
     func loadImage(from url: URL) async throws -> UIImage {
