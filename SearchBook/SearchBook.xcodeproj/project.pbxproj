@@ -20,6 +20,9 @@
 		1489CEA62C5F9C2100E923A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489CEA52C5F9C2100E923A0 /* SceneDelegate.swift */; };
 		1489CEAD2C5F9C2200E923A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1489CEAC2C5F9C2200E923A0 /* Assets.xcassets */; };
 		1489CEB02C5F9C2200E923A0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1489CEAF2C5F9C2200E923A0 /* Base */; };
+		14D6CC702C6A44AE00260E60 /* BookSearchServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6CC6F2C6A44AE00260E60 /* BookSearchServiceProtocol.swift */; };
+		14D6CC722C6A44F800260E60 /* BookSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6CC712C6A44F800260E60 /* BookSearchService.swift */; };
+		14D6CC742C6A450900260E60 /* BookSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D6CC732C6A450900260E60 /* BookSearchAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		1489CEAC2C5F9C2200E923A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1489CEAF2C5F9C2200E923A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1489CEB12C5F9C2200E923A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14D6CC6F2C6A44AE00260E60 /* BookSearchServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchServiceProtocol.swift; sourceTree = "<group>"; };
+		14D6CC712C6A44F800260E60 /* BookSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchService.swift; sourceTree = "<group>"; };
+		14D6CC732C6A450900260E60 /* BookSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				142683F02C6A430B00755DF9 /* NetworkManager.swift */,
+				14D6CC6F2C6A44AE00260E60 /* BookSearchServiceProtocol.swift */,
+				14D6CC712C6A44F800260E60 /* BookSearchService.swift */,
+				14D6CC732C6A450900260E60 /* BookSearchAPI.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -203,7 +212,10 @@
 				142683F32C6A443000755DF9 /* BookSearchResponse.swift in Sources */,
 				142683EE2C6A428A00755DF9 /* ConfigurationManager.swift in Sources */,
 				1452C8C32C61066700BE658D /* ImageLoader.swift in Sources */,
+				14D6CC722C6A44F800260E60 /* BookSearchService.swift in Sources */,
 				1452C8BF2C60ACF400BE658D /* BookSearchListViewController+DataSource.swift in Sources */,
+				14D6CC742C6A450900260E60 /* BookSearchAPI.swift in Sources */,
+				14D6CC702C6A44AE00260E60 /* BookSearchServiceProtocol.swift in Sources */,
 				1489CEA42C5F9C2100E923A0 /* AppDelegate.swift in Sources */,
 				1452C8B82C60A7DB00BE658D /* BookSearchListViewController.swift in Sources */,
 				1452C8BD2C60AAB500BE658D /* BookSummaryListCell.swift in Sources */,
