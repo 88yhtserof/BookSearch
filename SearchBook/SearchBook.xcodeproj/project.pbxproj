@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		142683EC2C6A41F100755DF9 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 142683EB2C6A41F100755DF9 /* Configuration.plist */; };
 		142683EE2C6A428A00755DF9 /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142683ED2C6A428A00755DF9 /* ConfigurationManager.swift */; };
+		142683F12C6A430B00755DF9 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142683F02C6A430B00755DF9 /* NetworkManager.swift */; };
 		1452C8AD2C6055A200BE658D /* BookSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452C8AC2C6055A200BE658D /* BookSummary.swift */; };
 		1452C8B82C60A7DB00BE658D /* BookSearchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452C8B72C60A7DB00BE658D /* BookSearchListViewController.swift */; };
 		1452C8BD2C60AAB500BE658D /* BookSummaryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1452C8BC2C60AAB500BE658D /* BookSummaryListCell.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		142683EB2C6A41F100755DF9 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		142683ED2C6A428A00755DF9 /* ConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationManager.swift; sourceTree = "<group>"; };
+		142683F02C6A430B00755DF9 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		1452C8AC2C6055A200BE658D /* BookSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSummary.swift; sourceTree = "<group>"; };
 		1452C8B72C60A7DB00BE658D /* BookSearchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchListViewController.swift; sourceTree = "<group>"; };
 		1452C8BC2C60AAB500BE658D /* BookSummaryListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSummaryListCell.swift; sourceTree = "<group>"; };
@@ -47,9 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142683EF2C6A42FA00755DF9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				142683F02C6A430B00755DF9 /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		1452C8AB2C60559800BE658D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				142683EF2C6A42FA00755DF9 /* Network */,
 				1452C8AC2C6055A200BE658D /* BookSummary.swift */,
 				1452C8C22C61066700BE658D /* ImageLoader.swift */,
 				142683EB2C6A41F100755DF9 /* Configuration.plist */,
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142683F12C6A430B00755DF9 /* NetworkManager.swift in Sources */,
 				142683EE2C6A428A00755DF9 /* ConfigurationManager.swift in Sources */,
 				1452C8C32C61066700BE658D /* ImageLoader.swift in Sources */,
 				1452C8BF2C60ACF400BE658D /* BookSearchListViewController+DataSource.swift in Sources */,
