@@ -4,3 +4,6 @@
 # for Xcode
 *.xcuserstate
 
+# for BookSearch
+Configuration.plist
+
